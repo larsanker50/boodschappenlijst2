@@ -1,0 +1,30 @@
+* {
+    font-family: sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+th {
+    color: white;
+    background-color: black;
+    width: 25%;
+}
+
+table, td, th {
+    border: 1px, solid, #888888;
+}
+
+.totalCost {
+    text-align: right;
+}
+
+.productTotalCost {
+    text-align: right;
+}
+
+.cost{
+    text-align: right;
+}
