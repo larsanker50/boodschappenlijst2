@@ -22,7 +22,7 @@ td, th {
     padding: 5px;
 }
 
-.totalCost {
+#totalCost {
     text-align: right;
 }
 
@@ -30,10 +30,6 @@ td, th {
     text-align: right;
 }
 
-.cost {
+.productPrice {
     text-align: right;
-}
-
-.totalCost {
-    text-align: left;
 }
