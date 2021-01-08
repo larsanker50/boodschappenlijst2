@@ -30,6 +30,10 @@ td, th {
     text-align: right;
 }
 
-.cost{
+.cost {
     text-align: right;
+}
+
+.totalCost {
+    text-align: left;
 }
