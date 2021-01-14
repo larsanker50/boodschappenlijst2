@@ -6,7 +6,7 @@ const totalCost = document.getElementById('totalCost');
 for(let i = 0 ; i <productQuantity.length; i++) {
     productQuantity[i].addEventListener("change", function() {
         updateValue(i);
-        updateTotalCost(i);
+        updateTotalCost();
     });
 }
 
@@ -14,10 +14,12 @@ function updateValue(i) {
     math = (+productQuantity[i].value * +productPrice[i].innerHTML);
     productTotalCost[i].innerHTML = math;
     return math;
-
-
 }
 
-function updateTotalCost(i) {
-    totalCost.innerHTML = updateValue(i) + +totalCost.innerHTML; // deze code werkt niet goed maar wel bijna. ipv telkens er boven op weer bij elkaar tellen
+function updateTotalCost() {
+    totalCost.innerHTML = 0
+    for (let i = 0 ; i <productQuantity.length; i++) {
+        totalCost.innerHTML = updateValue(i) + +totalCost.innerHTML;
+        
+    }
 }
