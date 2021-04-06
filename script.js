@@ -12,14 +12,14 @@ for(let i = 0 ; i <productQuantity.length; i++) {
 
 function updateValue(i) {
     math = (+productQuantity[i].value * +productPrice[i].innerHTML);
-    productTotalCost[i].innerHTML = math;
+    productTotalCost[i].innerHTML = parseFloat(math).toFixed(2);
     return math;
 }
 
 function updateTotalCost() {
     totalCost.innerHTML = 0
     for (let i = 0 ; i <productQuantity.length; i++) {
-        totalCost.innerHTML = updateValue(i) + +totalCost.innerHTML;
+        totalCost.innerHTML = parseFloat(updateValue(i) + +totalCost.innerHTML).toFixed(2);
         
     }
 }
